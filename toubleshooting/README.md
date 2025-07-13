@@ -20,7 +20,8 @@ p.drawLine(prev_point_x, prev_point_y, curr_point_x, curr_point_y)
 Where :
 prev_point_x = float  # Should be int
 
-Solution :
+## ✅ Solution :
+
 I solved the issue by explicitly casting all drawing coordinate values to int(), such as:
 p.drawLine(int(prev_point_x), int(prev_point_y), int(curr_point_x), int(curr_point_y))
 This fix was applied in the source code file:
